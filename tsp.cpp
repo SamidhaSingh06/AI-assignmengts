@@ -6,6 +6,7 @@ struct node
     int index;
     int cost;
 };
+
 int n;
 vector<int> v0;
 
