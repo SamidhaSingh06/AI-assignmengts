@@ -1,11 +1,3 @@
-/*
-Assignment By - Samidha Singh
-Roll no. - 1801152
-Algorithm - Uniform Cost Search ( using BFS as cost is uniform throughout )
-Queens - represented by 1 and empty positions by 0
-*/
-
-
 #include <iostream>
 #include <queue>
 using namespace std;
