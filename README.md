@@ -48,3 +48,8 @@ Heuristic:
 	proof of MST as underestimating heuristic: 
 
 		MST gives least possible cost throughout the tree, so it represents the least possible way one can travel to all cities only once without getting into a cycle, and then path from last city to initial city is also being added to provide more accuracy on heuristic. Hence the optimum cost C* from initial state to Goal test is >=  h*(n) + g(n).
+
+3. Clustering problem: solved using GA
+
+	n students, k clusters and m subjects
+	clustered them such that each cluster is having least diversity depending upon marks of each subject
