@@ -53,3 +53,7 @@ Heuristic:
 
 	n students, k clusters and m subjects
 	clustered them such that each cluster is having least diversity depending upon marks of each subject
+	
+4. AI vs Human AND AI vs AI: solved using Alpha-Beta Pruning
+	
+	
