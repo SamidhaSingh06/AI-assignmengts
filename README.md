@@ -62,7 +62,25 @@ Heuristic:
    -1: for Beta
    }
    
+   State Space:
+	
+	S (State Description) : <n, chance>
+				where n represents no. of sticks on table and chance represents who will pick sticks next.
+	
+	I (Initial State) : <n, toss()>
+				here, n is the initial no. of sticks and toss() represents who gets the chance first.
+	
+	G (Goal State) : <0, AI>
+			        here, n = 0 and chance should be of AI to pick sticks next, as the last stick has already 				  been picked by Human, AI has no sticks to pick up, hence AI won! 
+	
+	A (Actions) : Pick_sticks(i) where i is in {1,2,3} and chance = !chance to play alternatively
+	
+	
+   Toss is implemented by using rand(), if ((double) rand()/ (RAND_MAX)) >= 0.5, then AI wins else Human wins.
+   
    Algorithm is being implemented using recursion to get the backtracking. It starts from picking 1 stick, if it gets the best solution path there, it prunes other branches, otherwise it goes into picking 2 sticks, checks again for best solution, then ultimately goes for picking sticks.
    If AI couldn't find any best solution in any of the path, then it by default picks up 1 stick as it increases the scope of delay of the game where chances are more that opponent will do some mistake and opens winning paths for AI.
-	
-	
+
+Also, if you want to play the game again, this code will ask you for it and type 'y' to play again without compiling again.
+
+
