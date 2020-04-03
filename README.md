@@ -55,5 +55,14 @@ Heuristic:
 	clustered them such that each cluster is having least diversity depending upon marks of each subject
 	
 4. AI vs Human AND AI vs AI: solved using Alpha-Beta Pruning
+   Human vs Human is also being implemented.
+   
+   Payoff : {
+   1: for Alpha
+   -1: for Beta
+   }
+   
+   Algorithm is being implemented using recursion to get the backtracking. It starts from picking 1 stick, if it gets the best solution path there, it prunes other branches, otherwise it goes into picking 2 sticks, checks again for best solution, then ultimately goes for picking sticks.
+   If AI couldn't find any best solution in any of the path, then it by default picks up 1 stick as it increases the scope of delay of the game where chances are more that opponent will do some mistake and opens winning paths for AI.
 	
 	
